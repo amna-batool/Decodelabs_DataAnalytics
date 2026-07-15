@@ -155,3 +155,122 @@ The notebook generates:
 - Histograms
 - Boxplot for outlier detection
 - Correlation matrix
+
+
+
+
+**
+TASK # 03 SQL Data Analysis**
+# SQL Data Analysis on E-Commerce Dataset
+
+## Description
+
+This project demonstrates SQL-based data analysis on a cleaned e-commerce dataset. The dataset was imported into Microsoft SQL Server Management Studio (SSMS), where SQL queries were used to extract meaningful insights.
+
+The project covers fundamental SQL operations including data retrieval, filtering, sorting, grouping, and aggregation to analyze customer orders, sales performance, and product trends.
+
+## Features
+
+- Retrieve data using `SELECT`
+- Filter records using `WHERE`
+- Sort results using `ORDER BY`
+- Group records using `GROUP BY`
+- Calculate aggregates using:
+  - `COUNT()`
+  - `SUM()`
+  - `AVG()`
+- Analyze sales and customer order patterns
+
+## Technologies Used
+
+- Microsoft SQL Server
+- SQL Server Management Studio (SSMS)
+- SQL
+
+## Project Structure
+
+```
+├── Cleaned_Dataset.csv
+├── SQL_Queries.sql
+└── README.md
+```
+
+## Prerequisites
+
+- Microsoft SQL Server
+- SQL Server Management Studio (SSMS)
+
+## How to Run
+
+### Step 1: Create a Database
+
+```sql
+CREATE DATABASE DataAnalytics;
+GO
+```
+
+### Step 2: Use the Database
+
+```sql
+USE DataAnalytics;
+GO
+```
+
+### Step 3: Import the Dataset
+
+1. Open **SQL Server Management Studio (SSMS)**.
+2. Right-click the **DataAnalytics** database.
+3. Select **Tasks → Import Flat File** (or **Import Data**).
+4. Choose `Cleaned_Dataset.csv`.
+5. Import the data into a table named `Orders`.
+
+### Step 4: Execute SQL Queries
+
+Open the `SQL_Queries.sql` file and execute the queries to analyze the dataset.
+
+## SQL Concepts Covered
+
+- SELECT
+- WHERE
+- ORDER BY
+- GROUP BY
+- COUNT()
+- SUM()
+- AVG()
+
+## Analysis Performed
+
+- Retrieve customer order information
+- Filter orders based on conditions
+- Sort records by sales amount
+- Count total orders
+- Calculate total revenue
+- Compute average order value
+- Identify best-selling products
+- Analyze payment methods
+- Summarize order status
+- Generate sales insights using SQL
+
+## Output
+
+The SQL queries provide insights such as:
+
+- Total number of orders
+- Total revenue
+- Average order value
+- Product-wise sales
+- Payment method distribution
+- Order status summary
+- Top-selling products
+- Highest-value orders
+
+## Learning Outcomes
+
+By completing this project, you will gain practical experience with:
+
+- SQL fundamentals
+- Querying relational databases
+- Data filtering and sorting
+- Data aggregation
+- Grouping and summarizing data
+- Performing data analysis using SQL
